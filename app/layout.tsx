@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Moderna Digital Agency | IT yechimlar",
   description: "CRM, chatbot, mobil ilova, web platforma va biznes avtomatlashtirish yechimlari.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
