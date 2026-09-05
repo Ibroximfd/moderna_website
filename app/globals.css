@@ -113,3 +113,38 @@ h1,h2 { text-wrap:balance; } .intro h2,.section-heading h2,.process-title h2,.fa
 @media(max-width:760px){.orbit-tag-small{min-height:22px;padding:0 7px;font-size:6px;border-radius:7px}.orbit-tag-small svg{width:9px;height:9px}@keyframes satellite-bot{0%,100%{transform:translate(-50%,-50%) translate3d(0,-160px,0)}50%{transform:translate(-50%,-50%) translate3d(-6px,-166px,8px)}}@keyframes satellite-flow{0%,100%{transform:translate(-50%,-50%) translate3d(172px,0,0)}50%{transform:translate(-50%,-50%) translate3d(178px,-5px,8px)}}@keyframes satellite-ux{0%,100%{transform:translate(-50%,-50%) translate3d(0,160px,0)}50%{transform:translate(-50%,-50%) translate3d(6px,166px,8px)}}@keyframes satellite-analytics{0%,100%{transform:translate(-50%,-50%) translate3d(-172px,0,0)}50%{transform:translate(-50%,-50%) translate3d(-178px,5px,8px)}}}
 
 .button:disabled{cursor:wait;opacity:.72;transform:none;box-shadow:none}.form-error{margin:13px 0 -4px!important;color:#a83f29!important;font-size:11px!important;line-height:1.4}
+
+/* Mobile-first hero: a deliberate single-column composition, not a scaled desktop layout. */
+@media(max-width:600px){
+  .shell{width:calc(100% - 40px)}
+  .hero{min-height:auto;overflow:hidden}
+  .nav{height:88px;align-items:flex-start;padding-top:25px}
+  .brand{font-size:15px;gap:8px}.brand-mark{width:31px;height:31px;font-size:16px}
+  .nav-cta{font-size:11px;line-height:1.2;text-align:right;padding:7px 0 9px;max-width:140px}
+  .nav-cta .arrow{font-size:15px;margin-left:5px}
+  .hero-copy{padding:76px 0 0}.hero-copy .eyebrow{font-size:10px;margin-bottom:30px}
+  h1{font-size:clamp(47px,14.3vw,62px);line-height:.96;margin-bottom:31px;letter-spacing:-.065em}
+  .hero-text{font-size:16px;line-height:1.65;max-width:100%}
+  .hero-actions{margin-top:31px;display:flex;gap:15px;align-items:center;flex-wrap:wrap}
+  .hero-actions .button{padding:17px 19px;font-size:12px}.hero-actions .text-link{font-size:13px}
+  .hero-art{height:395px;min-height:395px;margin-top:26px}
+  .logo-frame{width:238px;height:238px;box-shadow:0 0 0 1px rgba(242,238,230,.22),0 0 80px rgba(107,205,189,.14)}
+  .orb-one{width:318px;height:318px}.orb-two{width:385px;height:385px}.orb-three{width:275px;height:275px}
+  .hero-grid-lines{inset:0 -90px;background-size:60px 60px}
+  .track-five,.track-six,.track-seven,.track-eight{display:none}
+  .orbit-tag{min-height:29px;padding:0 9px;border-radius:8px;font-size:7px;letter-spacing:.08em;gap:5px}
+  .orbit-tag svg{width:11px;height:11px}
+  .track-one .orbit-tag{animation:mobile-satellite-web 5.4s ease-in-out infinite!important}
+  .track-two .orbit-tag{animation:mobile-satellite-mobile 6.1s ease-in-out infinite!important}
+  .track-three .orbit-tag{animation:mobile-satellite-crm 5.7s ease-in-out infinite!important}
+  .track-four .orbit-tag{animation:mobile-satellite-ai 6.4s ease-in-out infinite!important}
+  .hero-footer{padding:0 0 24px;gap:10px;font-size:7px;letter-spacing:.1em}.hero-footer i{width:30px}
+  .intro{padding:82px 0}.services{padding:78px 0}.service-grid{grid-template-columns:1fr}.service-card{min-height:240px}.service-card:nth-child(n){border-left:1px solid var(--line)}
+  .statement-inner{min-height:340px;padding:70px 0 28px}.statement h2{font-size:49px}.statement-footer{font-size:7px}
+  .process,.faq{padding:78px 0}.tech{padding:78px 0}.contact{padding:78px 0}.contact-meta{font-size:9px}
+  .footer{display:grid;grid-template-columns:1fr auto;row-gap:20px}.footer p{grid-column:1 / -1;grid-row:2}
+}
+@keyframes mobile-satellite-web{0%,100%{transform:translate(-50%,-50%) translate3d(-132px,-98px,0)}50%{transform:translate(-50%,-50%) translate3d(-125px,-106px,10px)}}
+@keyframes mobile-satellite-mobile{0%,100%{transform:translate(-50%,-50%) translate3d(116px,-82px,0)}50%{transform:translate(-50%,-50%) translate3d(124px,-90px,10px)}}
+@keyframes mobile-satellite-crm{0%,100%{transform:translate(-50%,-50%) translate3d(-126px,103px,0)}50%{transform:translate(-50%,-50%) translate3d(-119px,110px,10px)}}
+@keyframes mobile-satellite-ai{0%,100%{transform:translate(-50%,-50%) translate3d(112px,108px,0)}50%{transform:translate(-50%,-50%) translate3d(120px,101px,10px)}}
